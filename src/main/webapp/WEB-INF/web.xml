@@ -1,0 +1,31 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <servlet>
+    <servlet-name>servlet-domino</servlet-name>
+    <servlet-class>com.qqq.servlet.MainServlet</servlet-class>
+    <description>my servlet</description>
+    <display-name>servlet-domino</display-name>
+
+    <jsp-file>/index.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servlet-domino</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <context-param>
+    <param-name>administrator</param-name>
+    <param-value>volynvlad@gmail.com</param-value>
+  </context-param>
+
+
+</web-app>
